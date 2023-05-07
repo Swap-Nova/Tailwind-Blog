@@ -27,3 +27,10 @@ content: ["./src/**/*.{html,js}"],
 @tailwind components;
 @tailwind utilities;
 ```
+- How to start Tailwind:
+We need to build the utility classes using the Tailwind CLI Tool. Open the terminal and enter the following command:
+```bash
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```
+
+PS: The terminal will now rebuild only the utility classes used in your code every time you save new changes. Thereafter, leave your terminal open during your development.
